@@ -33,7 +33,7 @@ class App extends Component {
   }
 
   makeVibe = () => {
-    window.navigator.vibrate(200);
+    window.navigator.vibrate(600);
     console.log("Vribating...");
   }
 
@@ -44,7 +44,7 @@ class App extends Component {
     })
     return (
       <div className='tc'>
-        <h1 className='f2'>RoboFriends</h1>
+        <h1 onClick={this.makeVibe} className='f2'>RoboFriends</h1>
         <SearchBox makeVibe={this.makeVibe} searchChange={onSearchChange}/>
         <Scroll>
           { isPending ? <h1>Loading</h1> :
