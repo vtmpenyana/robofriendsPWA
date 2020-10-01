@@ -32,6 +32,10 @@ class App extends Component {
     this.props.onRequestRobots();
   }
 
+  makeVibe = () => {
+    window.navigator.vibrate(200);
+  }
+
   render() {
     const { robots, searchField, onSearchChange, isPending } = this.props;
     const filteredRobots = robots.filter(robot => {
@@ -40,7 +44,7 @@ class App extends Component {
     return (
       <div className='tc'>
         <h1 className='f2'>RoboFriends</h1>
-        <SearchBox searchChange={onSearchChange}/>
+        <SearchBox makeVibe={this.makeVibe} searchChange={onSearchChange}/>
         <Scroll>
           { isPending ? <h1>Loading</h1> :
             <ErrorBoundry>
