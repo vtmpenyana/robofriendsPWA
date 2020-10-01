@@ -39,12 +39,6 @@
      "density": "4.0"
     },
     {
-     "src": "./android-icon-192x192.png",
-     "sizes": "512x512",
-     "type": "image\/png",
-     "density": "4.0"
-    },
-    {
      "src": "./apple-touch-icon.png",
      "sizes": "512x512",
      "type": "image\/png",
@@ -53,6 +47,7 @@
     {
      "src": "./maskable_icon.png",
      "purpose": "maskable",
+     "sizes": "100x100",
      "type": "image\/png",
      "density": "4.0"
     }
