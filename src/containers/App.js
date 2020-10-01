@@ -34,6 +34,7 @@ class App extends Component {
 
   makeVibe = () => {
     window.navigator.vibrate(200);
+    console.log("Vribating...");
   }
 
   render() {
